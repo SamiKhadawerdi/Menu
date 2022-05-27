@@ -9,9 +9,9 @@ const ItemList = ({itemsData }) => {
             {
                 itemsData.length >= 1 ? (itemsData.map((item) => {
                     return (
-                        <Col key={item.id} sm="12" className="mb-3">
-                        <Card className='d-flex flex-row 'style={{backgroundColor:"#f8f8f8"}} >
-                            <Card.Img className='img-item' variant="top" src={item.img}/>
+                        <Col key={item.id} sm="12" className="mb-3 " >
+                        <Card className='d-flex flex-row card' xs="12" style={{backgroundColor:"#f8f8f8"}} >
+                            <Card.Img className='img-item' variant="top" src={item.img} />
                             <Card.Body>
                                 <Card.Title className='d-flex flex-row justify-content-between'>
                                     <div className='item-title'>{item.title}</div>
